@@ -2,15 +2,13 @@
 import itertools
 from django.template import RequestContext
 from django.views.generic import CreateView, ListView, UpdateView
-from lab_sessions.forms import SessionsForm
 from projects.models import Project
 from subjects.models import Subject
 from utils.mixins import LoginRequiredMixin
 from django.template.defaultfilters import register
 from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import render_to_response
-from lab_sessions.models import Session
-from lab_sessions.models import Schedule
+
 
 from calendar import HTMLCalendar
 from itertools import groupby
